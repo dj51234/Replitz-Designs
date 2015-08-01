@@ -1,0 +1,79 @@
+#about
+	background-color: $lightbg
+	padding: 100px 0 0
+	+position(relative)
+	overflow: hidden
+	height: 1600px
+
+	.about-unit
+		max-width: 100%		
+		margin: 0 auto
+		height: 700px
+		
+		
+
+		.img1
+			background: url(../img/process/process1.png) center center no-repeat
+			background-size: contain
+			width: 679px
+			height: 390px 
+
+		.img2
+			background: url(../img/process/process2.png) center center no-repeat
+			background-size: contain
+			width: 679px
+			height: 390px 
+
+		.img3
+			background: url(../img/process/process3.png) center center no-repeat
+			background-size: contain
+			width: 679px
+			height: 390px 
+
+		&:first-child .about-img
+			+position(absolute, 100px null null -7%)
+		&:first-child .about-content
+			margin-top: 75px
+			margin-right: 170px
+		&:nth-child(2) .about-img
+			+position(absolute, 700px -5.5% null null)
+			margin-left: 300px
+		&:nth-child(2) .about-content
+			float: left
+			margin-top: -25px
+			margin-left: 200px
+
+		&:last-child .about-img
+			+position(absolute, null null 100px -7%)
+
+		&:last-child .about-content
+				margin-right: 200px
+
+		&:last-child
+			margin-top: -200px
+
+
+			
+
+
+
+		.about-content
+			float: right
+			max-width: 350px
+			font-weight: 300
+
+			h1, h3 
+				font-weight: 300
+			h1
+				color: #222
+			h3
+				margin: 10px 0
+				color: #333
+
+			p 
+				color: #444
+				line-height: 30px
+
+
+
+

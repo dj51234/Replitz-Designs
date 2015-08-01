@@ -1,0 +1,114 @@
+#header
+	background: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url(../img/homebg.jpg) center center no-repeat
+	background-size: cover
+	height: 100vh 
+	width: 100%
+	overflow: hidden
+	color: white
+	position: relative
+	
+	.main-title
+		display: flex 
+		flex-direction: column
+		justify-content: space-between
+		align-items: center
+		max-width: 430px
+		text-align: center
+		height: 450px
+		clear: both
+		+position(absolute, 50% null null 50%)
+		margin-left: -215px
+		margin-top: -225px
+
+		p 
+			color: transparentize(white, .15)
+			max-width: 430px
+			padding: 0 5px
+			line-height: 30px
+
+			span 
+				font-weight: 700
+				color: white
+			
+		a 
+			text-transform: uppercase
+			font-size: 15px
+			color: white 
+			text-decoration: none
+			
+
+			span 
+				padding: 10px 25px 
+				background-color: $darkblue
+				opacity: .9 
+				box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.55)
+				text-shadow: 2px 2px 2px rgba(0,0,0, .05)
+
+				&:hover
+					opacity: 1
+
+
+	.small-logo
+		+size(39px)
+		float: left
+		margin: 23px 0 0 100px
+		display: inline-block
+
+		img 
+			+size(39px)
+
+	.main-logo
+		background: url(../img/logos/main-logo.png)
+		background-size: contain
+		height: 192px
+		width: 140px
+
+	.nav
+		float: right
+		max-width: 550px
+		margin: 30px 100px 0 0
+
+		ul 
+			margin: 0
+
+			li 
+				display: inline
+		
+				a
+					color: white 
+					text-decoration: none 
+					text-transform: uppercase
+					font-size: 12px
+					letter-spacing: 2px
+					padding: 0 12px
+					border-left: 3px solid transparent
+
+					&:hover
+						color: $blue
+						border-left: 3px solid $blue
+
+@media (max-width: 800px)
+	#header
+		text-align: center
+		.nav 
+			width: 100%
+			float: initial
+			margin: 0 0 50px 0 
+			display: inline-block
+
+			ul 
+				padding-left: 0
+
+		.small-logo 
+			width: 100%
+			float: initial 
+			margin: 50px 0
+
+		.main-title
+			margin-top: -175px
+@media (max-width: 500px)
+	#header
+
+		.main-title
+			margin: 20px auto 0
+			position: static

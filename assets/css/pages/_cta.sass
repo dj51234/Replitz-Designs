@@ -1,0 +1,60 @@
+#cta 
+	background-color: $darkbg
+	overflow: hidden
+	padding: 100px 0 420px
+	position: relative
+	
+
+	.cta-wrap
+		max-width: 1200px
+		margin: 0 auto 
+		color: white 
+		font-weight: 300
+		
+
+		.cta-img
+			background: url(../img/cta-laptop.png) left center no-repeat
+			background-size: contain
+			width: 800px
+			height: 461px
+			float: right
+			+position(absolute, -210px -200px null null)
+
+		.cta-text
+			display: flex
+			flex-direction: column
+			max-width: 400px 
+			height: 400px
+			justify-content: space-between
+			padding: 0 10px
+			margin-top: -300px
+
+			h1
+				font-weight: 300
+				margin: 0
+				letter-spacing: 2px
+
+				&:nth-child(2)
+					margin-bottom: 30px
+
+			p 
+				margin-bottom: 50px
+				line-height: 30px
+				opacity: .9
+
+		.cta-btn
+			a 
+				color: white
+				text-decoration: none 
+				text-transform: uppercase
+				letter-spacing: 1px
+
+				span 
+					padding: 15px 20px 
+					border: 1px solid white
+					border-radius: 5px
+
+					&:hover
+						background-color: $darkbg 
+						color: $blue
+						border-color: $blue

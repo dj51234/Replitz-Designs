@@ -1,0 +1,147 @@
+.modal-overlay
+	+position(absolute, 0 0 0 0)
+	background-color: transparentize(black,.1)
+	opacity: 0
+	+transition
+	pointer-events: none
+
+
+	&.is-open
+		opacity: 1
+		pointer-events: auto
+		
+
+		.modal 
+			margin-top: 20vh
+
+
+	.ion-android-close
+		+position(absolute, 0 25px null null)
+		font-size: 40px
+		cursor: pointer
+		+transition()
+
+		&:hover
+			+transform(scale(1.1))
+
+.modal
+	max-width: 600px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin: 0 auto
+	margin-top: 10vh
+	+transition(margin 300ms)
+
+	.social-icons
+		display: flex 
+		flex-direction: column
+		justify-content: space-between
+		align-items: center
+		
+		a 
+			text-decoration: none
+			background-color: white
+			color: #FFF
+			font-size: 60px
+			padding: 0 20px 10px
+			margin: 10px 0
+
+			&:first-child
+				background-color: #3b5998
+
+				&:hover
+					color: #3b5998
+					background-color: #FFF
+
+			&:nth-child(2)
+				background-color: #df4b38
+				padding: 0 7px 10px
+
+				&:hover
+					color: #df4b38
+					background-color: #FFF
+
+			&:nth-child(3)
+				background-color: #5ea9dd
+				padding: 0 6px 10px
+
+				&:hover
+					color: #5ea9dd
+					background-color: #FFF
+
+			&:nth-child(4)
+				background-color: #cb2027
+				padding: 0 8px 10px
+
+				&:hover
+					color: #cb2027
+					background-color: #FFF
+
+			&:nth-child(5)
+				background-color: #FFF
+				padding: 0 12px 10px
+				color: #5ea9dd
+
+				&:hover
+					color: #FFF
+					background-color: #5ea9dd 
+				
+
+		
+		span 
+			margin: 10px 0
+			padding: 30px 20px
+			line-height: 20px
+			
+				
+			i 
+				font-size: 55px
+				
+				
+				
+
+	
+
+	form
+		max-width: 300px
+		text-align: center
+
+		h2 
+			font-weight: 300
+			margin: 15px 0
+
+		input 
+			display: inline-block
+			width: 100%
+			border: none
+			margin: 10px 0
+			padding: 10px 
+			font-weight: 300
+
+		[type="submit"]
+			width: 33%
+			background-color: $darkblue
+			text-transform: uppercase
+			
+
+			&:hover
+				background-color: #FFF
+				color: $darkblue
+
+		textarea
+			width: 100%
+			border: none
+			margin: 10px 0
+			padding: 10px
+			font-weight: 300
+
+/// Prevent Scrolling When Modal Open ///
+
+body
+
+	&.is-open
+		overflow: hidden
+		
+
+
