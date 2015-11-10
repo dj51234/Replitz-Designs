@@ -239,7 +239,8 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"], input[type="reset"],
+html input[type="button"],
+input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -477,40 +478,47 @@ body {
 #work {
   background-color: #F0F0F0;
   overflow: hidden; }
+  #work .work-nav {
+    width: 100%; }
+    #work .work-nav ul {
+      padding: 30px 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around; }
+    #work .work-nav li {
+      list-style-type: none;
+      display: inline-block;
+      text-transform: uppercase; }
+      #work .work-nav li a {
+        color: #333;
+        text-decoration: none; }
+        #work .work-nav li a:hover {
+          color: #666; }
   #work .work-content {
     width: 1200px;
-    height: 512px;
-    margin: 100px auto;
+    margin: 0 auto;
     padding: 0 10px;
-    position: relative;
-    height: 1650px; }
+    position: relative; }
     #work .work-content .imac-img {
       display: inline-block;
       background: url(../img/work/work1.png);
       background-size: contain;
       width: 544px;
       height: 512px;
-      float: left; }
-      #work .work-content .imac-img.fixed {
-        position: fixed;
-        bottom: 25%; }
-      #work .work-content .imac-img.fixed-bottom {
-        position: absolute;
-        top: 75%; }
-      #work .work-content .imac-img.image2 {
-        background: url(../img/work/work2.png);
-        -webkit-transition: all 0.15s ease-out 0s;
-        transition: all 0.15s ease-out 0s; }
-      #work .work-content .imac-img.image3 {
-        background: url(../img/work/work3.png);
-        -webkit-transition: all 0.15s ease-out 0s;
-        transition: all 0.15s ease-out 0s; }
+      float: left;
+      margin-top: 100px;
+      -webkit-transition: 500ms;
+      transition: 500ms; }
     #work .work-content .work-paragraph {
       width: 400px;
       text-align: center;
       font-weight: 300;
-      margin: 75px 0 200px;
-      opacity: 0;
+      margin: 150px 0 200px;
+      opacity: 1;
       float: right; }
     #work .work-content h3 {
       font-weight: 300;
@@ -523,44 +531,11 @@ body {
       font-size: 14px;
       line-height: 24px;
       color: #535353; }
-    #work .work-content .scrolling-paragraphs {
-      margin: 0 auto;
-      width: 1200px;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-align: end;
-      -webkit-align-items: flex-end;
-          -ms-flex-align: end;
-              align-items: flex-end;
-      clear: both; }
-      #work .work-content .scrolling-paragraphs .work-paragraph {
-        max-width: 400px;
-        text-align: center;
-        font-weight: 300;
-        margin: 200px 0; }
-        #work .work-content .scrolling-paragraphs .work-paragraph h3 {
-          font-weight: 300;
-          font-size: 18px;
-          line-height: 18px;
-          margin: 20px 0;
-          color: #2e2e2e;
-          letter-spacing: 2px; }
-        #work .work-content .scrolling-paragraphs .work-paragraph p {
-          font-size: 14px;
-          line-height: 24px;
-          color: #535353; }
 
 #cta {
   background-color: #171717;
   overflow: hidden;
-  padding: 100px 0 420px;
+  padding: 100px 0 150px;
   position: relative; }
   #cta .cta-wrap {
     max-width: 1200px;
@@ -574,7 +549,7 @@ body {
       height: 461px;
       float: right;
       position: absolute;
-      top: -210px;
+      top: 100px;
       right: -200px; }
     #cta .cta-wrap .cta-text {
       display: -webkit-box;
@@ -587,13 +562,12 @@ body {
           -ms-flex-direction: column;
               flex-direction: column;
       max-width: 400px;
-      height: 400px;
       -webkit-box-pack: justify;
       -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
               justify-content: space-between;
       padding: 0 10px;
-      margin-top: -300px; }
+      margin-top: 20px; }
       #cta .cta-wrap .cta-text h1 {
         font-weight: 300;
         margin: 0;

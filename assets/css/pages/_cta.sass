@@ -1,16 +1,16 @@
-#cta 
+#cta
 	background-color: $darkbg
 	overflow: hidden
-	padding: 100px 0 420px
+	padding: 100px 0 150px
 	position: relative
-	
+
 
 	.cta-wrap
 		max-width: 1200px
-		margin: 0 auto 
-		color: white 
+		margin: 0 auto
+		color: white
 		font-weight: 300
-		
+
 
 		.cta-img
 			background: url(../img/cta-laptop.png) left center no-repeat
@@ -18,16 +18,15 @@
 			width: 800px
 			height: 461px
 			float: right
-			+position(absolute, -210px -200px null null)
+			+position(absolute, 100px -200px null null)
 
 		.cta-text
 			display: flex
 			flex-direction: column
-			max-width: 400px 
-			height: 400px
+			max-width: 400px
 			justify-content: space-between
 			padding: 0 10px
-			margin-top: -300px
+			margin-top: 20px
 
 			h1
 				font-weight: 300
@@ -37,24 +36,24 @@
 				&:nth-child(2)
 					margin-bottom: 30px
 
-			p 
+			p
 				margin-bottom: 50px
 				line-height: 30px
 				opacity: .9
 
 		.cta-btn
-			a 
+			a
 				color: white
-				text-decoration: none 
+				text-decoration: none
 				text-transform: uppercase
 				letter-spacing: 1px
 
-				span 
-					padding: 15px 20px 
+				span
+					padding: 15px 20px
 					border: 1px solid white
 					border-radius: 5px
 
 					&:hover
-						background-color: $darkbg 
+						background-color: $darkbg
 						color: $blue
 						border-color: $blue
