@@ -1,16 +1,31 @@
 #work
 	background-color: $lightbg
 	overflow: hidden
-	
+
+	.work-nav
+		width: 100%
+		ul
+			padding: 30px 0
+			display: flex
+			justify-content: space-around
+
+		li
+			list-style-type: none
+			display: inline-block
+			text-transform: uppercase
+
+			a
+				color: #333
+				text-decoration: none
+
+				&:hover
+					color: #666
 
 	.work-content
 		width: 1200px
-		height: 512px
-		margin: 100px auto
+		margin: 0 auto
 		padding: 0 10px
 		position: relative
-		height: 1650px
-		
 
 
 		.imac-img
@@ -20,74 +35,27 @@
 			width: 544px
 			height: 512px
 			float: left
-			
-
-			
-			&.fixed
-				+position(fixed, null null 25% 100)
-
-			&.fixed-bottom
-				+position(absolute, 75% null null 100)
-
-			&.image2
-				background: url(../img/work/work2.png)
-				+transition()
-
-			&.image3
-				background: url(../img/work/work3.png)
-				+transition()
-
-			
+			margin-top: 100px
+			+transition(500ms)
 
 		.work-paragraph
 			width: 400px
-			text-align: center 
+			text-align: center
 			font-weight: 300
-			margin: 75px 0 200px
-			opacity: 0
+			margin: 150px 0 200px
+			opacity: 1
 			float: right
-			
 
 		h3
-			font-weight: 300 
+			font-weight: 300
 			font-size: 18px
 			line-height: 18px
 			margin: 20px 0
 			color: #2e2e2e
 			letter-spacing: 2px
 
-		p 
-			font-size: 14px 
+
+		p
+			font-size: 14px
 			line-height: 24px
 			color: #535353
-
-		.scrolling-paragraphs
-			margin: 0 auto
-			width: 1200px
-			display: flex
-			flex-direction: column 
-			align-items: flex-end
-			clear: both
-
-
-			.work-paragraph
-				max-width: 400px
-				text-align: center 
-				font-weight: 300
-				margin: 200px 0
-
-				
-
-				h3
-					font-weight: 300 
-					font-size: 18px
-					line-height: 18px
-					margin: 20px 0
-					color: #2e2e2e
-					letter-spacing: 2px
-
-				p 
-					font-size: 14px 
-					line-height: 24px
-					color: #535353
-			
