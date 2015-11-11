@@ -817,8 +817,6 @@ body {
   .modal-overlay.is-open {
     opacity: 1;
     pointer-events: auto; }
-    .modal-overlay.is-open .modal {
-      margin-top: 20vh; }
   .modal-overlay .ion-android-close {
     position: absolute;
     top: 0;
@@ -846,10 +844,7 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto;
-  margin-top: 10vh;
-  -webkit-transition: margin 300ms;
-  transition: margin 300ms; }
+  margin: 10vh auto 0; }
   .modal .social-icons {
     display: -webkit-box;
     display: -webkit-flex;
